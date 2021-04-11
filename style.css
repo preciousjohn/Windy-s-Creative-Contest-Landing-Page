@@ -1,0 +1,423 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans MT',  sans-serif;
+    scroll-behavior: smooth;
+}
+p{
+    font-size:1.2rem;
+    color:#111;
+}
+
+.banner{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: url(images/bg2.jpg);
+    background-size: cover;
+}
+.banner .content{
+    max-width:900px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 4em;
+    color: #fff;
+}
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display:inline-block;
+    padding: 10px 30px;
+    margin-top:20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 5px;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+/*adds the white bg when scrolling*/
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0,0,0.5);
+}
+header.sticky .logo{
+    color: #111;
+}
+
+header .logo{
+    color:#fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo span{
+    color:#ff0157;
+}
+header .navigate{
+    position: relative;
+    display: flex;
+    
+}
+header .navigate li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigate li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight:300 ;
+}
+header.sticky .navigate li a{
+   color:#111; 
+}
+header.sticky .navigate li a:hover{
+    color:#ff0157;
+}
+
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 47%;
+}
+.titleText{
+    color: #111;
+    font-size: 2.2em;
+}
+.titleText span{
+    color: #ff0157;
+    font-size: 1.5em;
+}
+.row .col50 .imgBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.row .col50 .imgBox img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.title{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.category .content{
+    display:flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.category .content .box{
+    width:340px;
+    margin:20px;
+    border:15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0,0,0.8);
+}
+.category .content .box .imgBox{
+    position: relative;
+    width:100%;
+    height: 300px;
+}
+.category .content .box .imgBox img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.category .content .box .text{
+    padding: 15px 0 5px;
+}
+.category .content .box .text h3{
+    font-weight: 400;
+    color:#111;
+}
+.judges .content{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.judges .content .box{
+    width:250px;
+    margin: 15px;
+}
+.judges .content .box .imgBox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.judges .content .box .imgBox img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.judges .content .box .text{
+    padding: 15px 0 5px;
+}
+.judges .content .box .text h3{
+    color: #111;
+    font-weight: 400;
+}
+
+.winners{
+    background: url(images/50.jpg);
+    background-size: cover;
+}
+.white .titleText{
+    color:#111;
+}
+.winners .content{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 40px;
+}
+.winners .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.winners .content .box .imgBox{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.winners .content .box .imgBox img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.winners .content .box .text{
+    text-align: center;
+}
+.winners .content .box .text p{
+    color: #666;
+    font-style: italic;
+}
+.winners .content .box .text h3{
+    margin-top: 20px;
+    color:#111;
+    font-size: 1em;
+    color:#ff0157;
+    font-weight: 600;
+}
+.apply{
+    background: url(images/try1.png);
+    background-size:cover ;
+}
+.contactForm{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactForm h3{
+    color:#111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.contactForm .inputBox{
+    position: relative;
+    width:100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width:100%;
+    border:1px solid #555;
+    padding:10px;
+    color:#111;
+    outline: none;
+    font-size:16px;
+    font-weight: 300;
+    resize: none;
+}
+.contactForm .inputBox input[type="submit"]{
+    font-size: 1em;
+    color:#fff;
+    background-color: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.copyright{
+    padding:8px 40px;
+    border-top:1px solid rgba(0, 0,0,0.1);
+    text-align: center;
+}
+.copyright p{
+    color:#333;
+}
+.copyright a{
+    color:#ff0157;
+    font-weight: 500;
+}
+
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigate{
+        display:none;
+    }
+    header .navigate.active{
+        width: 100%;
+        height: calc(100%-68px);
+        position: fixed;
+        top: 68px;
+        left:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigate li {
+        margin-left: 0px;
+    }
+    header .navigate li a {
+        color: #111;
+        font-size: 1.3em;
+    }
+    header .navigate li a:hover{
+        color:#ff0157;
+    }
+    .menuToggle{
+      position: relative;
+      width: 40px;
+      height: 40px;
+      background: url(images/me.png);
+      background-size: 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+    .menuToggle.active{
+      background: url(images/close1.png);
+      background-size: 25px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    header.sticky .menuToggle{
+        filter:invert(1)
+    }
+
+    section {
+        padding: 20px;
+    }
+    .banner .content h2 {
+        font-size: 3em;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .col50{
+        position: relative;
+        width:100%;
+    }
+    .row .col50 .imgBox{
+        height: 300px;
+        margin-top: 20px;
+    }
+    .category .content{
+        margin-top: 20px;
+    }
+    .category .content .box{
+        margin: 10px;
+    }
+    .category .content .box .imgBox{
+        height:260px;
+    }
+    .title{
+        text-align: center;
+    }
+    .titleText{
+        font-size: 1.9em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 400;
+    }
+    /*
+    .winners .content .box{
+        margin:10px;
+        padding:20px;
+    */
+
+    .contactForm{
+        padding:35px 40px;
+        
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:480px){
+    .banner .content h2{
+        font-size: 2.2em;
+        color:#fff;
+    }
+}
